@@ -301,8 +301,9 @@ class Queue{
     }
 
     public void insert(Node j) {
-        if(rear == maxSize - 1)
+        if(rear == maxSize - 1){
             rear = -1 ;
+        }
         queArray[++rear] = j;
         num++;
     }
